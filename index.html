@@ -1,16 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Parcel Experiments</title>
     <link rel="stylesheet" type="text/css" href="./style.scss">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="title-div">
-        <span class="title">Title aa</span>
+    <div class="main-container">
+        <div class="phone-div">
+            <div class="line-chat-div">
+                <div class="row title-div">
+                    <span class="left-icon">
+                        <i class="fas fa-cog"></i>
+                    </span>
+                    <span class="title">Line</span>
+                    <span class="right-icon">
+                        <i class="far fa-window-minimize"></i>
+                        <i class="far fa-square"></i>
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <div class="row nav-div">
+                    <i class="fas fa-users active"></i>
+                    <i class="fas fa-comment-dots"></i>
+                    <i class="fas fa-user-plus"></i>
+                    <i class="far fa-clock"></i>
+                </div>
+                <div class="row search-div">
+                    <div class="row inner-div">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="トークルームとメッセージ検索" name="search-input" id="">
+                    </div>
+                </div>
+                <div class="row label-div">
+                    <span class="text">プロフィール</span>
+                    <i class="fas fa-angle-up"></i>
+                </div>
+                <div class="row chat-row">
+                    <div class="profile-div">
+                        <img src="http://mblogthumb3.phinf.naver.net/20150119_142/cctvkr1010_1421610141919Ace3M_JPEG/2015011615073920019.jpg?type=w2"
+                            alt="">
+                    </div>
+                    <div class="content-div">
+                        <div class="name">金城局</div>
+                        <div class="chat-string">おはようございます。</div>
+                    </div>
+                </div>
+                <div class="row label-div">
+                    <span class="text">お気に入り</span>
+                    <i class="fas fa-angle-up"></i>
+                </div>
+                <div class="scroll-content">
+                    <div class="row chat-row">
+                        <div class="profile-div">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="content-div">
+                            <div class="name">Toshimi</div>
+                        </div>
+                    </div>
+                    <div class="row chat-row">
+                        <div class="profile-div">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDPR0wQ3krQDZ8NgZwqUCCyZt8h3Ty1R0fD0_1r1Q5suLvCa4p"
+                                alt="">
+                        </div>
+                        <div class="content-div">
+                            <div class="name">Ayumi</div>
+                        </div>
+                    </div>
+                    <div class="row chat-row">
+                        <div class="profile-div">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYnhIokg4v7boEiJmGlMv5GO21jbIbdpzpb655r9gJM0Timg3"
+                                alt="">
+                        </div>
+                        <div class="content-div">
+                            <div class="name">Suzuki</div>
+                        </div>
+                    </div>
+                    <div class="row chat-row">
+                        <div class="profile-div">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaSsPzGhM4iPeniZCqqWTmNInRtDI_kzWjQnOa_v3kfAsK-HUVyQ"
+                                alt="">
+                        </div>
+                        <div class="content-div">
+                            <div class="name">Mika</div>
+                        </div>
+                    </div>
+                    <div class="row chat-row">
+                        <div class="profile-div">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpsdzclJVzmcJMBTdxoQf69maz4ftKCTH0ZnPsvhV-Ox4fjvy"
+                                alt="">
+                        </div>
+                        <div class="content-div">
+                            <div class="name">Yumi</div>
+                        </div>
+                    </div>
+                    <div class="row chat-row">
+                        <div class="profile-div">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0C_dQ4WI_s6EI4pLFCwuu9TFAdTaBeJ_yYAHuVxUmfDhLrpNv"
+                                alt="">
+                        </div>
+                        <div class="content-div">
+                            <div class="name">Adachi</div>
+                        </div>
+                    </div>
+                    <div class="row chat-row">
+                        <div class="profile-div">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPsvFB9vPI5basCbB7foKFMNiTyrunzyJ0i9C5LOHTLUvclVkVgA"
+                                alt="">
+                        </div>
+                        <div class="content-div">
+                            <div class="name">Ayano</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="./index.js"></script>
 </body>
+
 </html>
