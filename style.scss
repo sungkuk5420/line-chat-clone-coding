@@ -6,7 +6,9 @@
 
 body{
     margin: 0;
-    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 *{
     box-sizing: border-box;
@@ -27,6 +29,11 @@ body{
     display: flex;
     flex-direction: column;
     border: 1px solid #2f3649;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    width: 100%;
 }
 .title-div{
     background: #2F3649;
@@ -40,13 +47,21 @@ body{
     }
     .left-icon{
         color:#687693;
+        cursor: pointer;
+        &:hover{
+            color: #535e74;
+        }
     }
     .right-icon{
         color:#687693;
         i{
             margin-right: 5px;
+            cursor: pointer;
             &:last-child{
                 margin-right: 0;
+            }
+            &:hover{
+                color: #535e74;
             }
         }
     }
@@ -59,6 +74,9 @@ body{
         margin: 0 20px;
         color:#66718C; 
         cursor: pointer;
+        &:hover{
+            color: #535e74;
+        }
         &.active{
             color: white;
         }   
@@ -93,7 +111,7 @@ body{
 }
 
 .label-div{
-    padding: 3px 7px;
+    padding: 3px 10px;
     color: #d8d6db;    
     background: #FBFBFD;
     border-bottom: 1px solid #F6F5FA;
@@ -103,6 +121,9 @@ body{
         color: #DEDDE1;
         font-size: 12px;
         font-weight: bold;
+    }
+    i{
+        cursor: pointer;
     }
 }
 
@@ -117,6 +138,7 @@ body{
             border-radius: 50%;
             overflow: hidden;
             border: 1px solid #ddd;
+            cursor: pointer;
         }
     }
     .content-div{
