@@ -1,11 +1,4 @@
-# parcel-start-kit
+# Line Clone coding
 
-Setting up a professional project with Parcel as a code bundler.
+라인 클론 코딩입니다.
 
-## Feater
-
-* ES6 with Bebel
-* SCSS
-* CSS Modules
-* Typography.js
-* Build for production
