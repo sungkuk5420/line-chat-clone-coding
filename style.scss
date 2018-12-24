@@ -1,169 +1,166 @@
-
-
-:root{
-    --mainColor: red;
-}
-
-body{
+body {
     margin: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
 }
-*{
+
+.row-div.title-div {
+    background: #2F3648;
+    text-align: center;
+    padding: 15px;
+}
+
+.row-div.title-div .title {
+    color: white;
+    font-size: 20px;
+}
+
+.row-div.title-div .fa-cog {
+    color: #3C4558;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+}
+
+.row-div.title-div .right-icon-div {
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+.row-div.title-div .right-icon-div i {
+    margin-right: 10px;
+}
+
+.row-div.title-div .fa-window-minimize {
+    color: #3C4558;
+}
+
+.row-div.title-div .fa-square {
+    color: #3C4558;
+}
+
+.row-div.title-div .fa-times {
+    color: #3C4558;
+}
+
+.menu-div {
+    background: #2F3648;
+    height: 78px;
+    text-align: center;
+    padding-top: 15px;
     box-sizing: border-box;
 }
 
-.row{
-    display: flex;
-    flex: 0 0 auto;
-    justify-content: space-between;
-    align-items: center;
+.menu-div i {
+    font-size: 32px;
+    color: #59647C;
+    margin-right: 30px;
 }
 
-.main-contanier{
-    height: 100%;
-    max-width: 350px;
-    max-height: 570px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #2f3649;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    position: absolute;
+.menu-div i:last-child {
+    margin-right: 0;
+}
+
+.menu-div i.active {
+    color: white;
+}
+
+.search-div {
+    background: #EDF1F8;
+    height: 57px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.search-div input {
     width: 100%;
-}
-.title-div{
-    background: #2F3649;
-    padding: 5px 10px;
-    height: 35px;
-    .title{
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        margin-left: 45px;
-    }
-    .left-icon{
-        color:#687693;
-        cursor: pointer;
-        &:hover{
-            color: #535e74;
-        }
-    }
-    .right-icon{
-        color:#687693;
-        i{
-            margin-right: 5px;
-            cursor: pointer;
-            &:last-child{
-                margin-right: 0;
-            }
-            &:hover{
-                color: #535e74;
-            }
-        }
-    }
-}
-.nav-div{
-    background: #2f3649;
-    height: 70px;
-    justify-content: center;
-    i{
-        margin: 0 20px;
-        color:#66718C; 
-        cursor: pointer;
-        &:hover{
-            color: #535e74;
-        }
-        &.active{
-            color: white;
-        }   
-    }
+    height: 38px;
+    padding-left: 30px;
+    box-sizing: border-box;
 }
 
-.search-div{
-    padding: 7px;
-    background:#F7F8F9;
-    height: 42px;
-    border-bottom: 1px solid #F6F5FA;
-    .inner-div{
-        width: 100%;
-        background: #fefefe;
-        border: 1px solid #E9EDF0;
-        i{
-            color:#E4E5E6;
-            margin-left: 7px;
-        }
-        input{
-            border: 0;
-            width: 100%;
-            padding: 5px;
-            &::placeholder{
-                color: #d8d6db;
-            }
-            &:focus{
-                outline: none;
-            }
-        }
-    }
+.search-div input::placeholder {
+    color: #C5C8D0;
+    font-size: 16px;
 }
 
-.label-div{
-    padding: 3px 10px;
-    color: #d8d6db;    
-    background: #FBFBFD;
-    border-bottom: 1px solid #F6F5FA;
-    justify-content: space-between;
-    height: 25px;
-    .text{
-        color: #DEDDE1;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    i{
-        cursor: pointer;
-    }
+.search-div i {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #C5C8D0;
 }
 
-.chat-row{
-    height: 65px;
-    .profile-div{
-        padding: 5px 15px;
-        width: 75px;
-        img{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 1px solid #ddd;
-            cursor: pointer;
-        }
-    }
-    .content-div{
-        width: 100%;
-        .name{
-            color: #2f3649;
-        }
-        .chat-string{
-            font-size: 14px;
-            color: #DEDDE1;
-        }
-    }
+.label-div {
+    background: #f7f7f7;
+    height: 40px;
+    padding: 8px 0 0 15px;
+    border: 1px solid #D4D3D8;
+    border-right: 0;
+    border-left: 0;
+    box-sizing: border-box;
 }
 
-.scroll-content{
+.label-div span {
+    color: #D4D3D8;
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.label-div i {
+    margin-top: 2px;
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: #D4D3D8;
+}
+
+.user-profile-div {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #D4D3D8;
+}
+
+.user-profile-div .user-image-div {
+    margin-left: 15px;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.user-profile-div .user-image-div img {
+    width: 100%;
     height: 100%;
-    overflow-y: auto;
-    &::-webkit-scrollbar {
-        width: 5px;
-    }
-       
-    &::-webkit-scrollbar-track {
-        background: #ddd;
-    }
-    &::-webkit-scrollbar-thumb {
-        background: #666; 
-    }
+}
+
+.user-profile-div .user-image-div,
+.user-profile-div .name-div,
+.user-profile-div .icon-div {
+    display: inline-block;
+}
+
+.user-profile-div .name-div {
+    vertical-align: top;
+    margin-top: 14px;
+    margin-left: 10px;
+    width: 430px;
+}
+
+.user-profile-div .name-div.no-profile-text {
+    margin-top: 24px;
+}
+
+.user-profile-div .icon-div {
+    vertical-align: top;
+}
+
+.user-profile-div .icon-div i {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #8A91A2;
+}
+
+.border-bottom-0 {
+    border-bottom: 0;
 }
