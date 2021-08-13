@@ -1,27 +1,42 @@
-## Line Clone coding
+## line-chat-clone-coding
 라인 클론 코딩입니다.
 
-## Demo Site
 
-https://sungkuk5420.github.io/Line-clone-coding/
+## Demo / 데모
 
-## Git Clone
+[라이브 데모 보기](https://vue-image-scrapper.herokuapp.com/)
 
-```git clone https://github.com/sungkuk5420/Line-clone-coding.git```
+## Getting Started / 어떻게 시작하나요?
 
-## NPM Install
+### Installing / 설치
 
-```npm install```
+아래 사항들로 현 프로젝트에 관한 모듈들을 설치할 수 있습니다.
 
-## Start
+```
+npm install
+```
 
-```npm start```
+### Run / 실행
 
-## Build
+```
+npm start
+```
 
-```npm run-script build```
+### Build / 빌드
+
+```
+npm build
+```
 
 
-## Demo Video
-[![Demo Video](https://i.ytimg.com/vi/gRzoQs-TKt0/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBJxSu49LwnBeH4Mt9xYfQWVAqyeg)](https://www.youtube.com/watch?v=gRzoQs-TKt0&feature=youtu.be)
+## License / 라이센스
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/PurpleBooth/LICENSE.md) file for details
+이 프로젝트는 MIT 라이센스로 라이센스가 부여되어 있습니다. 자세한 내용은 LICENSE.md 파일을 참고하세요.
+
+## Acknowledgments / 감사의 말
+
+- Hat tip to anyone whose code was used / 코드를 사용한 모든 사용자들에게 팁
+- Inspiration / 영감
+- etc / 기타
 
